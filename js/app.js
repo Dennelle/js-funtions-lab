@@ -70,30 +70,22 @@ function maxOfTwoNumbers(x, y) {
       }
 
   }
-
   console.log(maxOfTwoNumbers(10,7))
 
 //2.
 function maxOfThree(x,y,z) {
-    if (x > z&&y) {
+    if (x > z && x > y) {
         return x;
-    } else if (y > x&&z) {
+    } else if (y > x && y > z) {
         return y;
-} else if (z > x&&y) {
+} else if (z > x && z > y) {
         return z;
     }
 }
-console.log(maxOfThree(14,13,16));
+console.log(maxOfThree(14,17,16));
 
-
-// //3.
-// function isCharAVowel
-
-
-// //4.
-
-
-
-
-
-// //5.
+/* Define a function, as a function declaration, isCharAVowel that takes a character as an argument and returns true if it is a vowel, false otherwise.*/
+function isCharAVowel(letter){
+    if (letter === 'a' || letter === 'e' || letter === 'i' || letter === 'o' || letter === 'u') return true;
+};
+console.log(isCharAVowel('t'));
