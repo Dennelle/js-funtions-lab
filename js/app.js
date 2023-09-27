@@ -74,8 +74,7 @@ function maxOfTwoNumbers(x, y) {
   console.log(maxOfTwoNumbers(10,7))
 
 //2.
-
-function maxofThree(x,y,z) {
+function maxOfThree(x,y,z) {
     if (x > z&&y) {
         return x;
     } else if (y > x&&z) {
@@ -84,16 +83,17 @@ function maxofThree(x,y,z) {
         return z;
     }
 }
-console.log(maxofThree(15,16,11));
-
-//3.
+console.log(maxOfThree(14,13,16));
 
 
-
-//4.
-
-
+// //3.
+// function isCharAVowel
 
 
+// //4.
 
-//5.
+
+
+
+
+// //5.
