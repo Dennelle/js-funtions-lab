@@ -126,14 +126,6 @@ console.log(total(sumArray));
 
 //5 Define a function, as a function declaration, multiplyArray that takes an array of numbers and returns the product those numbers. For example, multiplyArray([2, 4, 5]); would return 40.
 
-// function productOfNumbers(prod){
-// let sum = 0;
-// for (let i=0; i < prod.length; i++)
-// { sum = sum*multiplyArray[i]
-// }
-
-// const multiplyArray = [1,2,3,4]
-
 const multiplyArray = [1,2,3,4];
 function totalArray(num){
     let sum = 1;
@@ -144,3 +136,26 @@ function totalArray(num){
 };
 
 console.log(totalArray(multiplyArray))
+
+//6. Define a function, as a function expression, numArgs that returns the number of arguments passed to the function when called.
+
+const numArgs =function(...nums) {
+    return nums.length;
+};
+console.log(numArgs(7,8,12));
+console.log(numArgs(7,8,12,30,25,1));
+
+
+
+//7.Define a function, as a function declaration, reverseString that takes a string, reverses the characters, and returns it. For example, reverseString('rockstar'); would return the string "ratskcor".
+
+function reverseString(){
+
+}
+
+console.log();
+
+//8. Define a function, as a function expression, longestStringInArray that takes an array of strings as an argument and returns the length of the longest string.
+
+
+//9. Define a function, as a function declaration, stringsLongerThan that takes an array of strings and a number as arguments; and returns an array of the strings that are longer than the number passed in. For example, stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3); would return ["hello", "morning"].
