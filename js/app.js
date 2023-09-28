@@ -123,3 +123,24 @@ let total = function(array){
 };
 
 console.log(total(sumArray));
+
+//5 Define a function, as a function declaration, multiplyArray that takes an array of numbers and returns the product those numbers. For example, multiplyArray([2, 4, 5]); would return 40.
+
+// function productOfNumbers(prod){
+// let sum = 0;
+// for (let i=0; i < prod.length; i++)
+// { sum = sum*multiplyArray[i]
+// }
+
+// const multiplyArray = [1,2,3,4]
+
+const multiplyArray = [1,2,3,4];
+function totalArray(num){
+    let sum = 1;
+    for (let i=0; i < num.length; i++)
+    { sum = sum * multiplyArray[i]
+    }
+    return sum
+};
+
+console.log(totalArray(multiplyArray))
