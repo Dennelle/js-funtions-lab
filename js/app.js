@@ -108,3 +108,18 @@ if (letter === 'a' || letter === 'e' || letter === 'i' || letter === 'o' || lett
 }}
 //here is where I call the function by the name.
 console.log(isCharAVowel ('f'));
+
+//4. Define a function, as a function expression, sumArray that takes an array of numbers and returns the sum of those numbers. For example, sumArray([2, 4, 5]); would return 11.
+
+//I believe this knows to get the numbers from the sumArray because it is an expression and the variable has to be assigned before the function.
+const sumArray = [1,2,3,4];
+
+let total = function(array){
+ let sum = 0;
+ for (let i=0; i < array.length; i++) {
+    sum += sumArray[i]
+    }
+   return sum
+};
+
+console.log(total(sumArray));
