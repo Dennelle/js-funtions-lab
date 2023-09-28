@@ -97,3 +97,14 @@ let maxOfThree = function(x,y,z) {
     }
 }
 console.log(maxOfThree(14,17,16));
+
+//3. Define a function, as a function declaration, isCharAVowel that takes a character as an argument and returns true if it is a vowel, false otherwise.
+
+// function = keyword isCharAVowel = function name that is used to call/invoke/execute the function ()<-- is the parameter that the argument passes through.
+function isCharAVowel(letter){
+if (letter === 'a' || letter === 'e' || letter === 'i' || letter === 'o' || letter === 'u') {
+    return true;
+} else {return false;
+}}
+//here is where I call the function by the name.
+console.log(isCharAVowel ('f'));
