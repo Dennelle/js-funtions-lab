@@ -139,21 +139,33 @@ console.log(totalArray(multiplyArray))
 
 //6. Define a function, as a function expression, numArgs that returns the number of arguments passed to the function when called.
 
-const numArgs =function(...nums) {
+const numArgs = function(...nums) {
     return nums.length;
 };
 console.log(numArgs(7,8,12));
 console.log(numArgs(7,8,12,30,25,1));
 
-
-
 //7.Define a function, as a function declaration, reverseString that takes a string, reverses the characters, and returns it. For example, reverseString('rockstar'); would return the string "ratskcor".
 
-function reverseString(){
+//created the declarative function
+function reverseString(string){
+    //I need to create an array that splits all the letters in the string, so I have to create a new variable splits called arrayStrings.
+    const arrayStrings = string.split('');
+    //now that strings are split you have to reverse each letter using this method .reverse and you need to create a new variable to show this step by using the previous step.
+    const reversingArray = arrayStrings.reverse();
+    //the next step is to join the split variables back together using a method called join. You need to name this step by creating a variable using the previous step.
+    const joinArray = reversingArray.join('');
+    //you need to return the final step in the process because it includes all the information.
+    return joinArray;
+};
 
-}
+// // taking input from the user
+// const string = prompt('Enter a string: ');
 
-console.log();
+// const result = reversingString(string);
+// console.log(result);
+
+console.log(reverseString('I love my son Luke'));
 
 //8. Define a function, as a function expression, longestStringInArray that takes an array of strings as an argument and returns the length of the longest string.
 
